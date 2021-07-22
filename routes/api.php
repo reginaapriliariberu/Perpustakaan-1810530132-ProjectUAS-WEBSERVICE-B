@@ -21,11 +21,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return bcrypt('lia');
 // });
 
-Route::get('tabelbuku', 'API\BukuController@index');
-Route::get('tabelbuku/{id}', 'API\BukuController@show');
-Route::post('tabelbuku', 'API\BukuController@store')->middleware('auth:api');
-Route::delete('tabelbuku/{id}', 'API\BukuController@destroy')->middleware('auth:api');
-Route::patch('tabelbuku/{id}', 'API\BukuController@update')->middleware('auth:api');
+Route::get('buku', 'API\BukuController@index');
+Route::get('buku/{id}', 'API\BukuController@show');
+Route::post('buku', 'API\BukuController@store')->middleware('auth:api');
+Route::delete('buku/{id}', 'API\BukuController@destroy')->middleware('auth:api');
+Route::patch('buku/{id}', 'API\BukuController@update')->middleware('auth:api');
 
 Route::get('rakbuku', 'API\RakBukuController@index');
 Route::get('rakbuku/{id}', 'API\RakBukuController@show');
