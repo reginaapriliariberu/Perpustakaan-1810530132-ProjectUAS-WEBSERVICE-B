@@ -11,7 +11,7 @@ class RakBuku extends Model
         'nama_rak', 'lokasi_rak', 'id_buku', 'status_rak',
     ];
 
-    protected $table = 'rak_bukus';
+
 
     public function buku()
     {
